@@ -1,0 +1,20 @@
+Estudi 4
+.INCLUDE uA741.model
+Vi	1	0	AC	1	phase=0
+R1	2	1	22k
+C1	3	2	2.2nF
+R2	4	3	120k
+X1	0	3	7	8	4	uA741
+R3	5	1	22k
+R4	6	5	119.9k
+C2	6	5	12.01nF
+X2	0	5	7	8	6	uA741
+Vcc	7	0	DC	10
+Vdd	0	8	DC	10
+.PRINT	AC	VM(4)
+.OP
+.AC	DEC	100	10Hz	20kHz > dades1.dat
+.PRINT	AC	VM(6)
+.OP
+.AC	DEC	100	10Hz	20kHz > dades2.dat
+.END
