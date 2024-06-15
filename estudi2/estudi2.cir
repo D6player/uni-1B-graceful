@@ -1,0 +1,14 @@
+Estudi 2
+
+Vg	1	0	DC	7
+R	1	2	94.7
+L	2	3	82m
+C	3	0	100n
+
+S1	3	0	5	0	interruptor
+Vctrl	5	0	pulse	iv=0	pv=1	delay=0	rise=1n	fall=1n	width=7m
+.model	interruptor	SW	VT=0.5	Ron=0.1	Roff=1t
+
+.print	tran	v(3)	i(L)
+.tran	0	18m	5e-6 > datos.dat
+.end
