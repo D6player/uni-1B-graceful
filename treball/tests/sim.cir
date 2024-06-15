@@ -1,0 +1,13 @@
+Sim
+
+Vi	1	0	AC	1
+Rm	1	2	2.309
+Lm	2	3	6.259M
+Cm	3	4	0.039382231P
+Ce	1	4	8.664P
+Ro	4	0	50
+
+.PRINT	AC	VM(4)	VP(4)
+.OPTION	numdgt=9
+.AC	LIN	10000	10.11MEGHz	10.18MEGHz > dades.dat
+.END
